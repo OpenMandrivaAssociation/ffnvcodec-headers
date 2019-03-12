@@ -15,6 +15,8 @@ FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 %doc README
 #{_datadir}/pkgconfig/ffnvcodec.pc
 #{_includedir}/ffnvcodec/*.h
+%{_includedir}/ffnvcodec*
+%{_libdir}/pkgconfig/ffnvcodec.pc
 
 #----------------------------------------------------------------------------
 
@@ -25,6 +27,4 @@ FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 make PREFIX=%{_prefix}
 
 %install
-%make_install
-	LIBDIR=/share \
-	PREFIX=%{_prefix}
+make PREFIX=%{_prefix} LIBDIR=%{_lib} DESTDIR=%{buildroot} install
