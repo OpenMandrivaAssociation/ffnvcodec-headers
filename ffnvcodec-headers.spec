@@ -13,8 +13,8 @@ FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 
 %files
 %doc README
-%{_datadir}/pkgconfig/ffnvcodec.pc
-%{_includedir}/ffnvcodec/*.h
+#{_datadir}/pkgconfig/ffnvcodec.pc
+#{_includedir}/ffnvcodec/*.h
 
 #----------------------------------------------------------------------------
 
