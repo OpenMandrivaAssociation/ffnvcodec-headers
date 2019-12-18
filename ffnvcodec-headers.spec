@@ -19,7 +19,7 @@ FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn nv-codec-headers-n%{version}
+%setup -qn nv-codec-headers-%{version}
 
 %build
 make PREFIX=%{_prefix}
