@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Summary:	FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 Name:     ffnvcodec-headers
 Version:	10.0.26.0
