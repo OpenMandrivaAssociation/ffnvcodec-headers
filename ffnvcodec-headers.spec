@@ -13,6 +13,7 @@ Source0:	https://github.com/FFmpeg/nv-codec-headers/releases/download/n%{version
 # file won't be found.
 #BuildArch:	noarch
 
+BuildRequires:	make
 %description
 FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 
