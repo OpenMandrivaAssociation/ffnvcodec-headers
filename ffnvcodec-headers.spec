@@ -2,7 +2,7 @@
 
 Summary:	FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 Name:     ffnvcodec-headers
-Version:	13.0.19.0
+Version:	13.1.15.0
 Release:	1
 License:	MIT
 Group:		Development/C
@@ -25,7 +25,7 @@ FFmpeg version of headers required to interface with Nvidia codec APIs (NVENC)
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn nv-codec-headers-%{version}
+%setup -qn nv-codec-headers-%{version} -n nv-codec-headers-13.1.15.0
 
 %build
 make PREFIX=%{_prefix}
